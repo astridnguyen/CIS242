@@ -1,0 +1,29 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+}
+
+.menu{
+    background-color: #4deb9c;
+    color: white;
+}
+.header{
+    background-color: rgb(241, 181, 211);
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 2px #FF66B2;
+    font-size: xx-large;
+    font-family: Garamond, serif;
+}
+.contact{
+    font-size: small;
+    color: #FF66B2;
+    text-shadow: 2px 2px 2px rgb(241, 181, 211);
+    text-align: right;
+}
+.orderSum{
+    color: #FF66B2;
+}
+.options {
+    visibility: hidden;
+}

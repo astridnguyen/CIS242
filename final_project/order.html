@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bubble tea Order</title>       
+        <meta name="author" content="EDCC" />       
+        <meta name="keywords" content="final project 'Bubble Tea Store', based on wireframe" />       
+        <meta name="description" content="This template is intended to be used as a base to build my bubble tea store web page." />       
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />       
+        <meta name="robots" content="none" />   
+            <link rel="stylesheet" href="bbtea.css" type="text/css" />
+                <script type="text/javascript" src="cookies.js"></script>
+                <script type="text/javascript" src="library.js"></script>
+            
+    </head>
+    <body>
+        <table name="main" cellpadding="5" width="100%" border="0">
+            <tr>
+                <td width="100"></td>
+                <td></td>
+                <td ></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <img src="graphics/tea.jpeg" width="180" height="200" alt="" border="0">
+                </td>
+                <td valign="bottom" class="header">Astrid Tea</td>
+                <td width="1px">&nbsp;</td>
+                <td width="300" valign="bottom" class="contact">
+                    3531 156th St SE<br />
+                    Lynnwood, WA 98087<br />
+                    973-809-8071
+                </td>
+            </tr>
+            <tr>
+                <td colspan="6">
+                    <hr style="background-color:white" />
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2" valign="top" nowrap="nowrap" class="orderSum">
+                    <a href="home.html" class="orderSum">Home</a><br />
+                    <a href="contact.html" class="orderSum">Contact Us</a><br />
+                    <a href="order.html" class="orderSum">Order Now</a>
+                </td>
+                <td rowspan="2" width="1" style="background-color: White;"></td>
+                <td valign="top" class="menu" width="1000">
+                    <form>
+                        <table class="menu" border="0" width="100%">
+                            <tr>
+                                <td valign="top">Select your size:</td>
+                                <td>
+                                    <input type="radio" name="rdoSize" value="1" onclick="return orderSummary()" /> Small<br />
+                                    <input type="radio" name="rdoSize" value="2" checked="checked" onclick="return orderSummary()" /> Medium<br />
+                                    <input type="radio" name="rdoSize" value="3" onclick="return orderSummary()" /> Large<br />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><hr style="background-color:white" /></td>
+                            </tr>
+                            <tr>
+                                <td valign="top">Select your flavor:</td>
+                                <td valign="top" nowrap="nowrap">
+                                    <input type="radio" name="rdoFlavor" value="ht" checked="checked" onclick="return orderSummary()" /> Oolong black tea<br />
+                                    <input type="radio" name="rdoFlavor" value="dd"  onclick="return orderSummary()" /> Oolong milk tea <br />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><hr style="background-color:white" /></td>
+                            </tr>
+                            <tr></tr>
+                            
+                                <td>Add toppings:
+                                <input type="radio" name="rdoType" onclick="return orderSummary()">
+                                <br />
+                                    <td colspan="2">
+                                        <table width="100%">
+                                        <tr>
+                                        <td width="100"></td>
+                                        <td nowrap="nowrap">
+                                        <input type="checkbox" value="Black pearl" name="chkOption" 
+                                        onclick="return orderSummary()"> Black Pearls <br />
+                                        <input type="checkbox" value="White pearl" name="chkOption" 
+                                        onclick="return orderSummary()"> White Pearls <br />
+                                        <input type="checkbox" value="Rainbow jelly" name="chkOption" 
+                                        onclick="return orderSummary()"> Rainbow Jelly <br />
+                                        </td>
+                                        <td width="100"></td>
+                                        <td nowrap="nowrap">
+                                        <input type="checkbox" value="Herbal jelly" name="chkOption"
+                                        onclick="return orderSummary()"> Herbal Jelly <br />
+                                        <input type="checkbox" value="Kojac jelly" name="chkOption"
+                                        onclick="return orderSummary()"> Kojac Jelly <br />
+                                        <input type="checkbox" value="Pudding" name="chkOption"
+                                        onclick="return orderSummary()"> Pudding <br />
+                                        </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><hr style="background-color:white" /></td>
+                            </tr>
+                            <tr>
+                                <td valign="top">Or chosing from our best selling:</td>
+                                <td valign="top" nowrap="nowrap">
+                                    <input type="radio" name="rdoType" value="1"  onclick="return orderSummary()" /> Sweety black: Black Pearl and Herbal Jelly<br />
+                                    <input type="radio" name="rdoType" value="2"  onclick="return orderSummary()" /> Sour creamy: Rainbow Jelly, Kojac Jelly and Pudding<br />
+                                    <input type="radio" name="rdoType" value="3"  onclick="return orderSummary()" /> Zebra: Black Pearl and White Pearl
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </td>
+                <td rowspan="2" width="1" style="background-color: white;"></td>
+                <td class="orderSum" valign="top">
+                    <div id="orderSum" style="height: 175px">Order Summary: </div>
+                    <br /><br /><br />
+                    <div id="priceSum">
+                        <table width="100%"> <tr><td>Subtotal:</td> <td align='right'></td></tr><tr><td>Tax:</td> <td align="right" style="border-bottom-color: White; border-bottom-width: 1px; border-bottom-style: solid;"></td></tr><tr> <td>Total:</td> <td align='right'></td></tr></table>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" class="menu" width="1000">
+                    <center><input type="button" onclick="return writePCCookies()" value="Submit Your Order"></center>
+                </td>
+            </tr>
+        </table>
+        
+        <script type="text/javascript">
+        <!--
+        //<![CDATA[
+        document.forms[0].reset();
+        orderSummary();
+        //]]>
+        //-->
+        </script>
+        
+    </body>
+    
+</html>
